@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API_Test</title>
+</head>
+<body>
+   
+    
+
+
+
+
+<script>
+    //Get all products
+   /* let products = [];
+ fetch('https://fakestoreapi.com/products').then(response => response.json())
+     .then((data) => {
+         drawHtml(data);
+     });
+ const drawHtml = (data) => {
+     products = data;
+     console.log(products)
+
+ };*/
+
+ //Adding new product
+ /*const newProduct={
+ category: "women's clothing",
+description: "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+id: 22,
+image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+price: 41.95,
+rating: {rate: 2.9, count: 340},
+title: "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+ };
+ let products = [];
+ fetch('https://fakestoreapi.com/products',{method:"post",body: JSON.stringify(newProduct)}).then(response => response.json())
+     .then((data) => {
+         drawHtml(data);
+     });
+ const drawHtml = (data) => {
+     products = data;
+     console.log(products)
+
+ };*/
+
+ //Editing product id=7
+/*const eInfoProduct={
+category: "jewelery",
+description: "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+price: 40.99,
+title: "White Gold Plated Princess"
+};
+let products = [];
+ fetch('https://fakestoreapi.com/products/7',{method:"PATCH",body: JSON.stringify(eInfoProduct)}).then(response => response.json())
+     .then((data) => {
+         drawHtml(data);
+     });
+ const drawHtml = (data) => {
+     products = data;
+     console.log(products)
+
+ };*/
+ //Deleting product id=6
+ let products = [];
+ fetch('https://fakestoreapi.com/products/6',{method:"DELETE"}).then(response => response.json())
+     .then((data) => {
+         drawHtml(data);
+     });
+ const drawHtml = (data) => {
+     products = data;
+     console.log(products)
+
+ };
+</script>
+
+
+
+</body>
+</html>
